@@ -16,6 +16,8 @@ require get_theme_file_path('/process/save-options.php');
 
 // Action Hooks
 function fu_enqueue() {
+	wp_enqueue_media();
+	
 	wp_register_style( 'fu-font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 	wp_register_style( 'fu-font-google', 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i' );
 	wp_register_style( 'fu-style', get_stylesheet_uri() );
